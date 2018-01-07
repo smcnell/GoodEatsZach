@@ -29,5 +29,8 @@ pageEncoding="ISO-8859-1"%>
             			</tr>
             		</table>
             </form:form>
+            
+                        <h1>Our goal for the day is: ${goal.pages } pages</h1>
+            
         </body>
 </html>
