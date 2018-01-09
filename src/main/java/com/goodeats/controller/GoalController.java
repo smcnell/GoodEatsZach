@@ -28,7 +28,7 @@ public class GoalController {
 	
 	@RequestMapping(value = "addGoal", method = RequestMethod.POST)
 	public String updateGoal(@Valid @ModelAttribute("goal") Goal goal, BindingResult result) {
-		System.out.println("Has Erros?: " + result.hasErrors()); 
+		System.out.println("Has Errors?: " + result.hasErrors()); 
 		System.out.println("Pages updated: " + goal.getPages());
 		if(result.hasErrors()) {
 			return "addGoal";

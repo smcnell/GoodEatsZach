@@ -16,5 +16,12 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 	<servlet-name>goodEatsServlet</servlet-name>
 	<url-pattern>*.html</url-pattern>
 </servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>goodEatsServlet</servlet-name>
+	<url-pattern>*.json</url-pattern>
+</servlet-mapping>
+
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
