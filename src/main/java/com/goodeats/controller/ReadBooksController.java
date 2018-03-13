@@ -10,21 +10,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.goodeats.model.Activity;
-import com.goodeats.model.ReadBooks;
+import com.goodeats.model.FoodToTry;
+import com.goodeats.model.TriedFood;
 
 @Controller
 public class ReadBooksController {
 
 	@RequestMapping(value = "/addReadBooks")
-	public String addReadBooks(@ModelAttribute("readBooks") ReadBooks readBooks) {
-		
-		System.out.println("readbooks: "+ readBooks.getReadBooks());
-		System.out.println("read authors: " + readBooks.getReadAuthor());
-		System.out.println("rating: " + readBooks.getRating());
-		System.out.println("activity: " + readBooks.getActivity());
-		System.out.println("placesTried: " + readBooks.getPlacesTried());
+	public String addReadBooks(@ModelAttribute("readBooks") TriedFood readBooks) {
 
 		return "addReadBooks";
+	}
+	
+	@RequestMapping(value = "/addFuturePlacesToEat")
+	public String futurePlacesToEat(@ModelAttribute("foodToTry") FoodToTry foodToTry) {
+		
+		return "addFuturePlacesToEat";
 	}
 	
 	

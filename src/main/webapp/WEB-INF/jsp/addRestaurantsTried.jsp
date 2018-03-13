@@ -31,7 +31,7 @@ pageEncoding="ISO-8859-1"%>
         
         </head>
         <body>
-            <h1> Restaurants I've tried</h1>
+            <h1> Add Restaurant I Tried</h1>
             <form:form commandName = "readBooks">
             		<table>
             			<tr>
@@ -40,7 +40,7 @@ pageEncoding="ISO-8859-1"%>
             					<form:select id="activities" path= "activity"></form:select>
             				</td> --%>
             				
-            				<td>Places I've Tried: </td>
+            				<td>Name of Restaurant I Tried: </td>
             				<td> <form:input path= "placesTried" /> </td>
             				
             				 <td>Type of food: </td>
@@ -48,6 +48,9 @@ pageEncoding="ISO-8859-1"%>
             				
             				<td>Rating: </td>
             				<td> <form:input path= "placesTriedRating" /> </td>
+            				
+            				<td>What I ordered: </td>
+            				<td> <form:input path= "placesTriedOrdered" /> </td>
             				
             				
             			</tr>
@@ -77,11 +80,15 @@ pageEncoding="ISO-8859-1"%>
             					<th>We've eaten at: </th>
             					<th>Type of Food: </th>
             					<th>Rating: </th>
+            					<th>Ordered: </th>
+            					
             				</tr>
             				<tr>
             					<td> ${readBooks.placesTried} </td>
             					<td>${readBooks.placesTriedType} </td>
             					<td> ${readBooks.placesTriedRating} </td>
+            					<td> ${readBooks.placesTriedOrdered} </td>
+            					
             				</tr>
             			
             		</table>
